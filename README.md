@@ -1,0 +1,1 @@
+# ts-transpile-sample
