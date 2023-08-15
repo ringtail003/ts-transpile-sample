@@ -2,14 +2,19 @@
   "name": "ts-transpile-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "browse": "npm run build && http-server -p 8080 -o dist/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^20.5.0",
     "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
